@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: var(--background-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +33,7 @@ header {
 
 header h1 {
     display: flex;
-    font-size: 50px;
+    font-size: 60px;
     padding: 0 10px 0 10px;
 }
 
@@ -57,8 +57,8 @@ nav li {
 }
 
 header nav a {
-    color: green;
-    font-size: 25px;
+    color: var(--font-color);
+    font-size: 30px;
 }
 
 header nav a:hover {
@@ -80,7 +80,7 @@ h1 {
 }
 
 h2 {display: block;
-    text-align: center}
+    text-align: center;}
 
 li {
     display: inline;
@@ -97,7 +97,7 @@ figcaption {
     color: var(--caption-font-color);
     position: absolute;
     padding: 10px;
-    bottom: 30px;
+    bottom: 10px;
 }
 
 img {
@@ -110,7 +110,7 @@ img {
 .top-nav {display: flex;
 }
 
-.hero-image {
+.hero {
     background-image: url("../assets/images/waylon.jpg");
     height: 720px;
     width: 100%;
@@ -118,6 +118,17 @@ img {
     background-repeat: no-repeat;
     background-size: 100%, 100%;
     position: relative;
+}
+
+.hero h2 {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-size: 40px;
+    display: flex;
+    position: absolute;
+    padding: 10px 10px;
+    top: 50%;
+    left: 25%;
 }
 
 .profile {
@@ -128,7 +139,7 @@ img {
     margin-left: 10px;
 }
 
-.page-section {
+.title {
     border-bottom: 4px solid var(--border-color);
 }
 
@@ -136,6 +147,7 @@ img {
     border-style: solid;
     border-width: 5px;
     padding: 10px;
+    margin: 10px;
     float: left;
     width: 100%;
 }
@@ -144,6 +156,7 @@ img {
     border-style: solid;
     border-width: 5px;
     padding: 10px;
+    margin: 10px;
     float: left;
     width: 50%;
 }
